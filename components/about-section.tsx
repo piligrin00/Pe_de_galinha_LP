@@ -1,4 +1,4 @@
-import { CheckCircle2, ImageIcon } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 
 const destaques = [
   'Peças originais e paralelas de qualidade',
@@ -10,12 +10,12 @@ export function AboutSection() {
   return (
     <section id="sobre" className="bg-muted py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <div className="flex min-h-72 flex-col items-center justify-center gap-3 overflow-hidden rounded-xl border border-dashed border-border bg-background p-8 text-center">
-          <ImageIcon className="h-10 w-10 text-muted-foreground" />
-          <p className="font-semibold text-foreground">Foto da loja em breve</p>
-          <p className="max-w-xs text-sm text-muted-foreground text-pretty">
-            Assim que você enviar fotos da fachada ou do interior, colocamos aqui.
-          </p>
+        <div className="overflow-hidden rounded-xl">
+          <img
+            src="/images/sobre-nos-loja.png"
+            alt="Interior da loja Pé de Galinha Autopeças com estoque de peças organizado"
+            className="h-full w-full object-cover"
+          />
         </div>
 
         <div>
